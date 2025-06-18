@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vježbe - David Kolak</title>
+<style>
+  @font-face {
+    font-family: 'DavidKolak';
+    src: url('font/DavidKolak.ttf') format('truetype');
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: url('slike/pozadina.jpg') center/cover no-repeat;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    background-color: #3399ff;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .ime {
+    font-family: 'DavidKolak', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+  }
+
+  nav ul li a:hover {
+    background-color: #555;
+  }
+
+  main {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 90%;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  h2 {
+    color: #3399ff;
+    border-bottom: 2px solid #3399ff;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+    font-family: Arial, sans-serif;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: normal;
+  }
+
+  section {
+    margin-top: 1.5rem;
+  }
+
+  .vjezba-slika, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+  }
+
+  video {
+    display: block;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1 class="ime">David Kolak</h1>
+  <h2>Kolegij Digitalni multimedij 1</h2>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Početna</a></li>
+    <li><a href="o_meni.html">O meni</a></li>
+    <li><a href="vjezbe.html">Vježbe</a></li>
+    <li><a href="video.html">Video</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>VJEŽBE - Vektorska grafika</h2>
+
+  <section>
+    <h3>Vježba 1</h3>
+    <img src="vjezbe/vjezba1.jpg" alt="Vježba 1 - Vektorska grafika" class="vjezba-slika" />
+  </section>
+
+  <section>
+    <h3>Vježba 2</h3>
+    <img src="vjezbe/vjezba2.jpg" alt="Vježba 2 - Vektorska grafika" class="vjezba-slika" />
+  </section>
+
+  <section>
+    <h3>Vježba 3</h3>
+    <img src="vjezbe/vjezba3.jpg" alt="Vježba 3 - Vektorska grafika" class="vjezba-slika" />
+  </section>
+
+  <section>
+    <h3>Vježba 4</h3>
+    <img src="vjezbe/vjezba4.jpg" alt="Vježba 4 - Vektorska grafika" class="vjezba-slika" />
+  </section>
+
+  <h2>PROJEKTNI ZADATAK 1</h2>
+  <section>
+    <img src="vjezbe/vjezba5.jpg" alt="Projektni zadatak 1" class="vjezba-slika" />
+  </section>
+
+  <h2>VJEŽBE - Piksel grafika</h2>
+
+  <section>
+    <h3>Vježba 5</h3>
+    <img src="vjezbe/vjezba6.jpg" alt="Vježba 5 - Piksel grafika" class="vjezba-slika" />
+  </section>
+
+  <section>
+    <h3>Vježba 6</h3>
+    <img src="vjezbe/vjezba7.jpg" alt="Vježba 6 - Piksel grafika" class="vjezba-slika" />
+  </section>
+
+  <h2>PROJEKTNI ZADATAK 2</h2>
+  <section>
+    <img src="vjezbe/vjezba8.jpg" alt="Projektni zadatak 2" class="vjezba-slika" />
+  </section>
+
+  <h2>VJEŽBE - video/web</h2>
+  <section>
+    <h3>Vježba 9</h3>
+    <video controls>
+      <source src="vjezbe/vjezba9.mp4" type="video/mp4" />
+      Vaš preglednik ne podržava video element.
+    </video>
+  </section>
+</main>
+
+</body>
+</html>

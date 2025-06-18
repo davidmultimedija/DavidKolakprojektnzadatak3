@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>David Kolak - O meni</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @font-face {
+            font-family: 'DavidKolak';
+            src: url('font/DavidKolak.ttf') format('truetype');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('slike/pozadina.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #3399ff;
+            text-align: center;
+            width: 100%;
+            padding: 2rem 1rem;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'DavidKolak', Arial, sans-serif;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            background-color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .slike-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .slike-container img {
+            border: 2px solid #333;
+            border-radius: 8px;
+            max-width: 200px;
+            height: auto;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .video-link {
+            font-size: 1.1rem;
+            color: #3399ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .video-link:hover {
+            text-decoration: underline;
+        }
+
+        .video-link span.fnctext {
+            text-transform: lowercase;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>David Kolak</h1>
+        <h2>Kolegij Digitalni multimedij 1</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o_meni.html">O meni</a></li>
+            <li><a href="vjezbe.html">Vježbe</a></li>
+            <li><a href="video.html">Video</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Moje ime je David, dolazim iz Otočca. Imam 20 godina, studiram na Grafičkom fakultetu u Zagrebu i treniram boks.</p>
+
+        <div class="slike-container">
+            <img src="slike/slika1.jpg" alt="Slika 1" />
+            <img src="slike/slika2.jpg" alt="Slika 2" />
+            <img src="slike/slika3.jpg" alt="Slika 3" />
+        </div>
+
+        <p>
+            Pogledajte video:
+            <br />
+            <a class="video-link" href="https://youtu.be/gzpomLKNqCI?si=Nd6dCbiBvxPFHeUz" target="_blank" rel="noopener noreferrer">
+                <span style="font-weight:bold;">FNC</span> - <span class="fnctext">the official aftermovie</span>
+            </a>
+        </p>
+    </main>
+</body>
+</html>
